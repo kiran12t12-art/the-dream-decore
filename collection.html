@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="images/main logo.jpg">
+  <title>The Dream Decore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f5;
+  color: #333;
+}
+
+/* Hero */
+.hero {
+  background: url('images/tree\ img.jpg') center/cover no-repeat;
+    background-color:#fcdd89;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text {
+  /* background-color: rgba(255, 255, 254, 0.85); */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  font-family: 'Georgia', serif;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #f0e4e4;
+}
+
+/* Section Links */
+.section-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: rgb(197, 202, 202);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.section-links a {
+  color:white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: #18082b;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.section-links a:hover {
+  background-color: #f18c07;
+}
+
+/* Headings */
+.section-heading {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #fd8b09;
+}
+
+/* Product Grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h4 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff9203;
+}
+
+/* Fullscreen Modal */
+.fullscreen {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 70%;
+  border-radius: 10px;
+}
+
+.fullscreen h3 {
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .section-links {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+.info-box {
+      height: 6em;
+      width: 44em;
+      background-color: #4a90e2;
+      color: rgba(219, 128, 8, 0.788);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      background-color: black;
+      margin-top: 15px;
+      margin-left: 18%;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: larger;
+
+    }
+
+    @media (max-width: 768px) {
+      .info-box {
+        width: 80%;
+      font-size:0.5em ;
+        /* Adjust width on smaller screens */
+
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+     <!-- Navigation bar -->
+     <nav class="navbar">
+    <div class="logo">
+      <img src="images/main logo.jpg" alt="Logo" />
+    </div>
+    <span class="logo-name">the dream decore</span>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="servies.html"><i class="fas fa-paint-brush"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-phone"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Event Decoration Collection</h1>
+      <p>Discover beauty in every detail — from weddings to corporate elegance.</p>
+    </div>
+  </section>
+
+  <!-- Section Links -->
+  <nav class="section-links">
+    <a href="#wedding">ALL</a>
+    <a href="#mehndi">Mehndi</a>
+    <a href="#Baraat">Baraat</a>
+    <a href="#Walima">Walima</a>
+    <a href="#outdoor">Outdoor</a>
+    <a href="#table">Table</a>
+    <a href="#birthday">Birthday</a>
+    <a href="#corporate">Corporate</a>
+</nav>
+
+<div class="info-box">
+  <p>At The Dream Decore, we specialize in creating unforgettable experiences through stunning event decoration. Whether it's a dreamy wedding, a vibrant birthday, a corporate gala, or a themed celebration, our creative team brings your vision to life with style, elegance, and a touch of magic.</p>
+  </div>
+<!-- All Product Sections -->
+<div class="products-container">
+    
+    <!-- Section 1 -->
+    <h2 id="wedding" class="section-heading">Wedding Decor</h2>
+    <div class="product-grid">
+      <!-- 6 Cards -->
+      <div class="card" onclick="showFull(this)"><img src="images/walkway3.jpg" alt=""><h4>Top grand pakistani weddings</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/weeding img.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/fairy light pink.jpg" alt=""><h4>pink theam Decoration</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/outdoorimg.jpeg" alt=""><h4>Outdoor theam</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/trees.jpg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 1.jpg" alt=""><h4>Stage View</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 2.jpg" alt=""><h4>Stage View</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 4.jpg" alt=""><h4>Stage View</h4></div>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 id="mehndi" class="section-heading">Mehndi Setup</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/mhandi img 1.jpg" alt=""> <h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/mhandi img 2.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/mhandi img3.jpg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/mhandi img4.jpg" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/mhandi img 5.jpeg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/mhandi img 6.jpg" alt=""><h4>Stage View</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/mhandi img 7.jpg" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/mhandi img 8.jpg" alt=""><h4>Stage View</h4></div>
+
+    </div>
+
+    <!-- Section 3 -->
+    <h2 id="Baraat" class="section-heading">Baraat Setups</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/baraat img 1.jpg" alt=""><h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 2.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 3.jpg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 4.jpg" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 5.jpg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/baraat img 6.webp" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/baraat img 7.jpg" alt=""><h4>Stage View</h4></div>
+        <div class="card" onclick="showFull(this)"><img src="images/baraat img 8.jpg" alt=""><h4>Stage View</h4></div>
+    </div>
+
+    <!-- Add remaining sections similarly... -->
+ <!-- Section 4 -->
+    <h2 id="Walima" class="section-heading">Walima Setup</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/walima img1.jpg" alt=""><h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/walima img 2.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/walima img 3.jpg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/walima img 4.jpg" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/walima img 5.jpg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/walima img 6.jpg" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/walima 7.jpg" alt=""><h4>Stage View</h4></div>
+        <div class="card" onclick="showFull(this)"><img src="images/walima img 8.jpg" alt=""><h4>Stage View</h4></div>
+    </div>
+     <!-- Section 4 -->
+    <h2 id="outdoor" class="section-heading">Outdoor Setup</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/out door1.jpg" alt=""><h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/outdooe img.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/outdoorimg.jpeg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/photo ooth 1.jpg" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/outdoor img 5.jpeg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/outdoor img 6.jpg" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/outdoor img 7.webp" alt=""><h4>Stage View</h4></div>
+        <div class="card" onclick="showFull(this)"><img src="images/outdoor img 8.jpg" alt=""><h4>Stage View</h4></div>
+    </div>
+     <!-- Section 4 -->
+    <h2 id="table" class="section-heading">Taable Decoration</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/tabledecor1.jpg" alt=""><h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/tabledecor2.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/tabledecor3.jpg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/tabledecore4.jpg" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/tabledecore5.jpg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/tabledecore6.png" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/tabledecore7.jpg" alt=""><h4>Stage View</h4></div>
+        <div class="card" onclick="showFull(this)"><img src="images/tabledecore8.jpg" alt=""><h4>Stage View</h4></div>
+    </div>
+     <!-- Section 4 -->
+    <h2 id="birthday" class="section-heading">Birthday Decor</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/birthday img 2.webp" alt=""><h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/birthday-img1.jpeg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/birthdy img.jpg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/birthdat img 5.jpeg" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/birthday img 4.jpg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/birthday img 5.jpg" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/birthday img 6.jpg" alt=""><h4>Stage View</h4></div>
+        <div class="card" onclick="showFull(this)"><img src="images/birthday img 8.jpg" alt=""><h4>Stage View</h4></div>
+    </div>
+   
+     <!-- Section 4 -->
+    <h2 id="corporate" class="section-heading">Corporate Events</h2>
+    <div class="product-grid">
+      <!-- Add 6 more cards -->
+       <div class="card" onclick="showFull(this)"><img src="images/corparat img2.jpg" alt=""><h4>Floral Arch</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/corprate event img.jpg" alt=""><h4>Royal Aisle</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/coprate img 3.jpg" alt=""><h4>Gold Table</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/coprate img 4.webp" alt=""><h4>Elegant Chairs</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/coprate img 6.jpg" alt=""><h4>Hanging Lights</h4></div>
+      <div class="card" onclick="showFull(this)"><img src="images/coprate img 7.webp" alt=""><h4>Stage View</h4></div>
+       <div class="card" onclick="showFull(this)"><img src="images/Corporate-Venues.jpg" alt=""><h4>Stage View</h4></div>
+           <div class="card" onclick="showFull(this)"><img src="images/coprate img 5.webp" alt=""><h4>Stage View</h4></div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Modal -->
+  <div id="fullscreen" class="fullscreen">
+    <span onclick="closeFull()" class="close-btn">&times;</span>
+    <img id="full-image" src="" alt="">
+    <h3 id="full-title"></h3>
+  </div>
+
+  <script>
+    function showFull(card) {
+      const img = card.querySelector("img").src;
+      const title = card.querySelector("h4").innerText;
+      document.getElementById("full-image").src = img;
+      document.getElementById("full-title").innerText = title;
+      document.getElementById("fullscreen").style.display = "flex";
+    }
+
+    function closeFull() {
+      document.getElementById("fullscreen").style.display = "none";
+    }
+    // nav-script
+ const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

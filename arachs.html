@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="icon" type="image/png" href="images/main logo.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Dream Decore</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
+      background-image: url();
+    }
+    .hero1{
+   background: url('images/arch-banner\ img.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+    }
+    /* .hero h1 {
+  font-size: 3em;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+    } */
+    .arch-heading{
+      font-variant: small-caps;
+      font-size: xx-large;
+      font-weight: 900;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .para{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight:900;
+        color: aliceblue;
+        text-align: center;
+        height: 6em;
+        width: 44em;
+        margin-left:27% ;
+        margin-top: 6%;
+        margin-bottom: 3%;
+        background-image: url(images/leves.jpeg);
+    }
+   
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      width: 300px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card h3 {
+      margin: 15px;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      padding: 20px;
+    }
+
+    .overlay.active {
+      display: flex;
+    }
+
+    .overlay img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .overlay h3 {
+      margin-top: 20px;
+    }
+
+    .overlay p {
+      max-width: 600px;
+      text-align: center;
+    }
+    
+    .nextbtn{
+
+        height: 50px;
+        width: 120px;
+        border-radius: 20px;
+        color: #f1c916;
+        background-color: rgb(46, 23, 2);
+    margin-left: 45%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    font-size: larger;
+        
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+    <nav class="navbar">
+    <div class="logo">
+      <img src="images/main logo.jpg" alt="Logo" />
+    </div>
+    <span class="logo-name">the dream decore</span>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="servies.html"><i class="fas fa-paint-brush"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-phone"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- Hero section with a background image -->
+    <section class="hero1" id="home">
+        <h1 class="arch-heading">the arches</h>
+    </section></a>
+    
+    <div class="para"> <p> the arch is a popular decorative element used during the Nikkah (Islamic marriage ceremony) and other celebrations.
+    </p></div>
+
+<div class="container">
+  <div class="card" onclick="showOverlay(0)">
+    <img src="images/white-blossom-arch-1024x665.jpg" alt="Product 1">
+    <h3>wreath part of the pakistani functions collection</h3>
+  </div>
+  <div class="card" onclick="showOverlay(1)">
+    <img src="images/Square-Flower-Arch-Frame-with-artificial-flowers-768x760.jpg" alt="Product 2">
+    <h3>Product 2</h3>
+  </div>
+  <div class="card" onclick="showOverlay(2)">
+    <img src="images/Wedding-Arch-Hire.jpg" alt="Product 3">
+    <h3>Product 3</h3>
+  </div>
+</div>
+
+<!-- Overlay Sections -->
+<div id="overlay0" class="overlay" onclick="hideOverlay(0)">
+  <img src="images/white-blossom-arch-1024x665.jpg" alt="Product 1 Full">
+  <h3>Product 1</h3>
+  <p>This is a full view description of Product 1.</p>
+</div>
+
+<div id="overlay1" class="overlay" onclick="hideOverlay(1)">
+  <img src="images/Square-Flower-Arch-Frame-with-artificial-flowers-768x760.jpg" alt="Product 2 Full">
+  <h3>Product 2</h3>
+  <p>This is a full view description of Product 2.</p>
+</div>
+
+<div id="overlay2" class="overlay" onclick="hideOverlay(2)">
+  <img src="images/Wedding-Arch-Hire.jpg" alt="Product 3 Full">
+  <h3>Product 3</h3>
+  <p>This is a full view description of Product 3.</p>
+</div>
+<!-- nextbtn -->
+<a href="entrance.html"><button class="nextbtn">NEXT</button></a>
+
+
+
+
+<!-- java srcipt code -->
+   <script >
+    // nav-script
+ const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    // on click function
+    function showOverlay(index) {
+      document.getElementById(`overlay${index}`).classList.add('active');
+    }
+
+    function hideOverlay(index) {
+      document.getElementById(`overlay${index}`).classList.remove('active');
+    }
+   </script>
+
+</body>
+</html>

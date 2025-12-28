@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="images/main logo.jpg">
+  <title>The Dream Decore</title>
+  <link rel="stylesheet" href="style.css">
+   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fefefe;
+  color: #333;
+}
+
+.hero1 {
+  background: url('images/birthday\ img\ 6.jpg') center/cover no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  color: rgba(196, 181, 181, 0.747);
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero1 h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero1 p {
+  font-size: 1.2em;
+  max-width: 600px;
+  margin: auto;
+}
+
+.category-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: white;
+  padding: 15px;
+  flex-wrap: wrap;
+  
+}
+
+.category-links a {
+  text-decoration: none;
+  color:darkcyan;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  background-color:rgba(174, 198, 221, 0.507) ;
+  font-weight: 600;
+  transition: color 0.3s;
+  text-shadow: rgb(141, 141, 189);
+}
+
+.category-links a:hover {
+  color: #ff1493;
+}
+
+.collection-section {
+  height: em;
+  padding: 40px 20px;
+}
+
+.collection-section h2 {
+  font-size: 2em;
+  color: #03133f;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+}
+
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+  font-size: 1.2em;
+  color: #0e131bbb;
+}
+
+.card p {
+  margin: 0 15px 20px;
+  color: #555;
+  font-size: 0.95em;
+}
+  .container{
+     
+      background-color: aliceblue;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+     
+    }
+   
+    .left-div{
+      background-color: aqua;
+      height: 400px;
+      width: 500px;
+      border-radius: 30px;
+       background: url(images/birthday-img1.jpeg) center /cover;
+      margin-top: 10px;
+    }
+    .right-div{
+    
+      color: darkcyan;
+        height: 400px;
+      width: 500px;
+      border-radius: 30px ;
+     padding: 20px;
+       margin-top: 10px;
+    }
+  .right-div p{
+    text-align: center;
+    line-height: 2em;
+    margin-top: 20px;
+    font-size: large;
+       
+  }
+ @media (max-width: 768px) {
+  .right-div p {
+    font-size: 0.6em;
+  
+  }
+ }
+ .athantic-line{
+  text-align:center;
+  color: rgb(12, 56, 56);
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+ }
+.footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+  </style>
+</head>
+<body>
+     <!-- Navigation bar -->
+     <nav class="navbar">
+    <div class="logo">
+      <img src="images/main logo.jpg" alt="Logo" />
+    </div>
+    <span class="logo-name">the dream decore</span>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="service.html"><i class="fas fa-paint-brush"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-phone"></i> Contact</a></li>
+    </ul>
+  </nav>
+  <header class="hero1">
+    <h1>Birthday Theme Collections</h1>
+    <p>Explore our beautiful decorations tailored for every age and personality!</p>
+  </header>
+
+  <nav class="category-links">
+    <a href="#kids">Kids Themes</a>
+    <a href="#luxury">Luxury Styles</a>
+    <a href="#balloon">Balloon Magic</a>
+    <a href="#minimal">Minimal Setup</a>
+  </nav>
+<h1 class="athantic-line">✨ Design with passion. Decorate with purpose. Celebrate with joy. ✨</h1>
+    <div class="container">
+      <div class="left-div"></div>
+        <div class="right-div">
+          <p>Celebrate birthdays in style with our vibrant and personalized decoration services. From colorful balloons, themed backdrops, and fairy lights to elegant table setups, we create unforgettable moments. Perfect for kids, teens, or adults, our expert team transforms your venue into a magical space that reflects joy, fun, and celebration.</p>
+        </div>
+
+    </div>
+  </div>
+  <section id="kids" class="collection-section">
+    <h2>Kids Birthday Themes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/birt-spiderman.jpeg" alt="Spiderman Theme" />
+        <h3>Spiderman Setup</h3>
+        <p>Full superhero vibe with balloon backdrop and props.</p>
+      </div>
+      <div class="card">
+        <img src="images/Princess birth.jpg" alt="Princess Theme" />
+        <h3>Princess Castle Theme</h3>
+        <p>Perfect for your little queen’s special day.</p>
+      </div>
+      <div class="card">
+        <img src="images/Jungle Adventure bithday.jpg" alt="Jungle Theme" />
+        <h3>Jungle Adventure</h3>
+        <p>Wild and fun, full of animal props and leafy greens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="luxury" class="collection-section">
+    <h2>Luxury Birthday Styles</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/golden birthday.jpg" alt="Golden Theme" />
+        <h3>Golden Glam</h3>
+        <p>Elegant golden tones with crystal lights and premium props.</p>
+      </div>
+      <div class="card">
+        <img src="images/black&cold birthdy img.jpg" alt="Black & Gold Theme" />
+        <h3>Black & Gold</h3>
+        <p>Modern, bold, and stunning decor for adults.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="balloon" class="collection-section">
+    <h2>Balloon Magic</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/Feather-Wall-Swansea-768x768.jpg" alt="Rainbow Balloons" />
+        <h3>Rainbow Balloon Arch</h3>
+        <p>Colorful setup that brings pure joy to any party.</p>
+      </div>
+      <div class="card">
+        <img src="images/le.jpg" alt="LED Balloons" />
+        <h3>LED Balloon Night</h3>
+        <p>Glowing balloons perfect for evening celebrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="minimal" class="collection-section">
+    <h2>Minimal & Elegant</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/birthday-decoration.jpg" alt="White & Gold Theme" />
+        <h3>White & Gold Setup</h3>
+        <p>Simplicity meets class — for intimate birthdays.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>Email: info@thedreamdecor.com</li>
+                <li>Phone: +123 456 7890</li>
+                <li>Address: Party City</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contect.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Dream Décor. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

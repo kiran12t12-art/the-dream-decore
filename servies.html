@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="images/main logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Dream Decore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      background-image: url(/flower\ wall.jpg);
+
+    }
+
+    /* Navbar */
+
+
+    .hero {
+      /* background: linear-gradient(to right, #007bff, #00c6ff); */
+      color: rgb(250, 222, 62);
+      padding: 80px 20px;
+      background-image: url(images/flower\ wall.jpg);
+    }
+
+
+
+    /* Layout container */
+    .content-section {
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .left-div {
+      width: 66.66%;
+      /* 8/12 */
+      height: 1200px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+/* paragraph-div */
+    
+    .responsive-div {
+  max-width: 800px;
+  padding: 20px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #333;
+}
+@media (max-width: 600px) {
+  .responsive-div {
+    padding: 15px;
+    font-size: 0.6rem;
+ height: 100px;
+ margin-bottom: 30px;
+  }
+}
+
+    /* dancefloor-heading */
+    .danc-floor {
+      text-align: center;
+      font-variant: small-caps;
+      font-family: 'Times New Roman', Times, serif;
+      color: darkgoldenrod;
+      font-weight: 900;
+      font-size: xx-large;
+    }
+    @media (max-width:600px) {
+      .danc-floor{
+          font-size: 1rem;
+       
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      max-width: 100%;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #4CAF50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    .full-width-box {
+      width: calc(3 * 200px + 2 * 20px);
+      /* 3 boxes + 2 gaps */
+      height: 300px;
+      background-color: #2196F3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: px;
+    }
+
+    /* Responsive behavior */
+    @media (max-width: 700px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+        max-height: fit-content;
+      }
+
+      .full-width-box {
+        width: 100%;
+        max-width: 500px;
+        max-height: fit-content;
+      }
+
+    }
+
+
+    .right-div {
+      width: 34.33%;
+      /* 4/12 */
+      height: 900px;
+
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .right-div h3 {
+      margin-bottom: 10px;
+      text-align: start;
+      color: darkgoldenrod;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .right-div li {
+      padding-left: 20px;
+      color: black;
+    }
+
+    .right-div a {
+      text-decoration: none;
+
+    }
+
+    .right-div li:hover {
+      color: #4e4848;
+    }
+    
+@media (max-width: 600px) {
+  .right-div {
+    padding: 15px;
+    font-size: 0.6rem;
+ height: 800px;
+ margin-bottom: 30px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/main logo.jpg" alt="Logo" />
+    </div>
+    <span class="logo-name">the dream decore</span>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="servies.html"><i class="fas fa-paint-brush"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-phone"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome Our Services</h1>
+  </div>
+
+  <!-- Parallel Divs -->
+  <div class="content-section">
+    <div class="left-div">
+       <div class="responsive-div">
+    <p>
+     The entertainment services found on this page are particularly well suited to evening events. Some of the entertainment services listed are interactive, others simply visually enhance your event.
+We aren’t pushy with sales and will happily advise whether or not the entertainment services below will enhance your event.
+    </p>
+  </div>
+
+      <div class="danc-floor" id="danceflower">dancefloor</div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="box"><img src="images/28ft-White-Starlight-Dance-Floor-768x576.jpg" height="100%" width="100%"
+              alt=""></div>
+          <div class="box"><img src="images/Black-20ft-LED-Dance-Floor-768x576.jpg" height="100%" width="100%" alt="">
+          </div>
+          <div class="box"><img src="images/dance-floor.jpg" height="100%" width="100%" alt=""></div>
+        </div>
+        <div class="full-width-box"><img src="images/walkway.jpg" height="100%" width="100%" alt=""></div>
+      </div>
+ <div class="danc-floor" id="Illuminated">Illuminated Light Up Letters</div>
+      <div class="container">
+
+        <div class="full-width-box"><img src="images/Light-Up-Letter-Hire-2-768x576.jpg" height="100%" width="100%" alt=""></div>
+      </div>
+    </div>
+    <div class="right-div">
+      <h3>Our Services</h3>
+      <!-- <ul> -->
+      <h3>Decoration:</h3>
+      <a href="centerpice.html">
+        <li>Centrepieces</li>
+      </a>
+      <a href="enterence.html">
+        <li>Entrance</li>
+      </a>
+      <a href="walkway.html">
+        <li>walkway</li>
+      </a>
+      <a href="stage.html">
+        <li>stage decoration</li>
+      </a>
+      <a href="arachs.html">
+        <li>Arches</li>
+      </a>
+      <a href="flower-wall.html">
+        <li>Flower Walls</li>
+      </a>
+      <a href="/trees.html">
+        <li>Trees</li>
+      </a>
+
+      <a href="/fairy-light.html">
+        <li>Fairy Lights</li>
+      </a>
+
+      <a href="#danceflower">
+        <li> LED Dance Floors </li>
+      </a>
+      <a href="">
+        <li> Selfie Booth</li>
+      </a>
+       <a href="/nextpage.html">
+        <li> Table Decoration</li>
+      </a>
+      <h3>Multimedia Entertainment:</h3>
+
+      <a href="/DJ-pag.html">
+        <li> DJ</li>
+      </a>
+      <a href="">
+        <li>flower machine</li>
+      </a>
+      <a href="#Illuminated">
+        <li> Illuminated 4ft Letters </li>
+      </a>
+
+      <a href="">
+        <li> Dry Ice </li>
+      </a>
+      <a href="">
+        <li> Follow sport light </li>
+      </a>
+      <a href="">
+        <li> Snow machine </li>
+      </a>
+      <a href="">
+        <li> Cool Faire </li>
+      </a>
+      <a href="">
+        <li> Revolving Stage </li>
+      </a>
+      <a href="">
+        <li>SMD Screen </li>
+      </a>
+      <a href="">
+        <li> LED Screen</li>
+      </a>
+      <a href="">
+        <li> Trus</li>
+      </a>
+
+      </ul>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <ul>
+        <li>Email: info@thedreamdecor.com</li>
+        <li>Phone: +123 456 7890</li>
+        <li>Address: Party City</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contect.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 The Dream Décor. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/script.js"></script>
+</body>
+
+</html>  

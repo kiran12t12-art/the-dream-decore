@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="images/main logo.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> The Dream Decore</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #008b8b;
+      color: rgb(28, 32, 32);
+      background-image: url(images/flower\ wall.jpg);
+    }
+
+    .container {
+        height: 50em;
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+     .container h1 {
+        margin-top: 10%;
+      text-align: center;
+      font-size: 3em;
+      
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    form {
+      flex: 1;
+      min-width: 300px;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: rgb(28, 32, 32);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    form button:hover {
+      background-color: #006f6f;
+    }
+
+    .contact-info {
+      width: 300px;
+      max-height: 350px;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 15px;
+      font-size: 1.5em;
+      border-bottom: 2px solid #008b8b;
+      padding-bottom: 5px;
+    }
+
+    .contact-info p {
+      font-size: 1em;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+ <!-- Navbar -->
+    <nav class="navbar">
+    <div class="logo">
+      <img src="images/main logo.jpg" alt="Logo" />
+    </div>
+    <span class="logo-name">the dream decore</span>
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="servies.html"><i class="fas fa-paint-brush"></i> Services</a></li>
+      <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
+      <li><a href="contect.html"><i class="fas fa-phone"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="container" >
+    <h1>The Dream Decore</h1>
+    <p class="description">Let us bring elegance and charm to your special moments with unforgettable wedding event designs.</p>
+
+    <div class="content">
+      <form id="contactForm" action="backend.php" method="post">
+        <input type="text" name="firstName" placeholder="First Name" required>
+        <input type="text" name="lastName" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="number" placeholder="Mobile Number" required>
+        <textarea name="comment" placeholder="Your Comments" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p><strong>Phone:</strong>+92-320-1473732 </p>
+        <p><strong>Email:</strong> thedreamdecoregrw@gmail.com</p>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul>
+                <li>Email: info@thedreamdecor.com</li>
+                <li>Phone: +123 456 7890</li>
+                <li>Address: Party City</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 The Dream Décor. All rights reserved.</p>
+        </div>
+    </footer>
+   <script src="/script.js"></script>
+</body>
+</html>
